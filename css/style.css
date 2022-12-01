@@ -3,10 +3,11 @@
     --preto: #000;
 
     --roxo: #7022D2;
+    --roxo-escuro: #721181;
     --roxo-fraco: #A212B9;
     --rosa: #E1A4FE;
 
-    --background: #1E1E1E;
+    --background: #1e1e1e81;
 }
 *{
     margin: 0;
@@ -18,22 +19,30 @@ body{
     /* background: linear-gradient(to bottom, #7022d2 25%,#a212b9 70.83%,#E1A4FE 100%); */
 }
 .header{
-    background-color: var(--roxo);
-    padding: 1rem;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.829),#7022D2);
+    
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 .header ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    border: 2px  solid red;
+    /* border: 2px  solid red; */
     list-style: none;
 }
+
 .container{
     /* border: 2px solid green; */
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 0 0.5rem;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .menu-link a{
     /* border: 2px solid yellow; */
@@ -56,32 +65,33 @@ img{
 }
 .main{
     background-color: var(--roxo);
-    padding: 5rem;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,#7022d2,#721181,#7022D2,rgb(0, 0, 0));
 }
 .conteudo-titulo{
     color: var(--branco);
     text-transform: uppercase;
     /* font-weight: 200; */
-    margin-bottom: 1.2rem;
+    margin: 1.2rem;
     text-align: center;
 }
 .conteudo-shows{
-    border: 2px solid red;  
-}
-.descricao-show{
-    border: 2px solid yellow;
+    /* border: 2px solid red; */
+    /* background-color: rgba(162, 0, 255, 0.582); */
+    border-radius: 8px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    justify-content: space-between; 
-    background-color: var(--background);
+    justify-content: space-evenly; /* space-evenly = deixa o espaço entre as caixas iguais*/
+}
+.descricao-show{
+    /* border: 2px solid yellow; */
     padding: 2rem;
+    width: 20%;
 }
-.descricao-img{
+.descricao-conteudo{
     background-color: var(--branco);
-}
-.descricao-info{
-    display: flex;
-    background-color: var(--branco);
-    width: 31.5%;
-}
+}   
